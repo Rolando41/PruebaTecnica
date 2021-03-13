@@ -20,7 +20,11 @@ namespace PruebaTecnica_LogicaNegocio
         //Vehiculos sin servicios
         public IEnumerable<VehiculoDTO> getVehiculosSinServicio()
         {
+
             return _dataSql.obtenerVehiculosSinServicios();
+
+            
+
         }
 
 
@@ -31,14 +35,22 @@ namespace PruebaTecnica_LogicaNegocio
                 datos.Placa, datos.Dueno, datos.Marca
                 );
 
+
             _dataSql.guardarVehiculo(resgistrar);
+
+            
+
         }
 
 
         //Vehiculos por Servicio
         public IEnumerable<VehiculoDTO> getListaVheiculoByServicio(int idServicio)
         {
+
             return _dataSql.obtenerListaVheiculoPorServicio(idServicio);
+
+            
+
         }
 
 
@@ -52,7 +64,11 @@ namespace PruebaTecnica_LogicaNegocio
         //Mostrar Servicios
         public IEnumerable<ServiciosDTO> getServices()
         {
+
             return _dataSql.obtenerServicios();
+
+            
+
         }
 
 
